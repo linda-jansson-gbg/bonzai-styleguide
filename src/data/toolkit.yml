@@ -1,0 +1,8 @@
+colors:
+  primary:
+    Green: '#21512c'
+    DarkGrey: '#1b1d22'
+    MiddleGrey: '#595957'
+    LightGrey: '#e5e5e5'
+    White: '#ffffff'
+    Brown: '#605048'

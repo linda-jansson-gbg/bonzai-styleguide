@@ -1,0 +1,24 @@
+@mixin vertical-center {
+  display: flex;
+  align-items: center;
+}
+@mixin column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin layout-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1.3rem;
+  @media only screen and (max-width: 979px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  @media only screen and (max-width: 680px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media only screen and (max-width: 428px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

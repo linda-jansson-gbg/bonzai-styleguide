@@ -1,0 +1,62 @@
+/**
+ * Toolkit styles
+ */
+
+@import 'typography';
+@import 'buttons';
+@import 'variables';
+@import 'links';
+@import 'components';
+@import 'mixins';
+@import 'cards';
+@import 'select';
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  // height: 100vw;
+}
+header {
+  height: 20rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/hero.jpeg') center center;
+  background-size: cover;
+  color: $white;
+  @include column-center;
+}
+main {
+  padding-bottom: 5rem;
+}
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.two-column-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 25rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  max-width: 980px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  @media only screen and (max-width: 870px) {
+    justify-content: center;
+  }
+  .about {
+    max-width: 40rem;
+  }
+  aside {
+    padding: 3rem;
+    img {
+      max-width: 12rem;
+    }
+  }
+}
+// .grid-container {
+//   @include layout-grid;
+// }

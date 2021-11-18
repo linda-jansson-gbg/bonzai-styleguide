@@ -1,0 +1,32 @@
+@import 'variables';
+
+.buttons {
+  background-color: #e5e5e5;
+  height: 2.5rem;
+  padding: 1.2rem;
+}
+button {
+  appearance: none;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  height: 2.3rem;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: $radius;
+  background: $green;
+  color: $white;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &.white-btn {
+    background: $white;
+    color: $green;
+  }
+  &.invert {
+    border: 1px solid $green;
+    background: none;
+    color: $green;
+  }
+}

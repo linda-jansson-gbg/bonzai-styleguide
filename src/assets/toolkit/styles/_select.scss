@@ -1,0 +1,48 @@
+.select-options {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  &.atom {
+    align-items: flex-start;
+  }
+  button {
+    margin-top: 2rem;
+  }
+  .select {
+    border: 1px solid $middleGrey;
+    color: $darkGrey;
+    background: transparent;
+    padding: 0 0.5rem;
+    width: 230px;
+    height: 30px;
+    @include vertical-center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-right: 2rem;
+    &.selected {
+      outline: 3px solid $green;
+      outline-offset: -3px;
+    }
+    &.option {
+      justify-content: center;
+      background: $lightGrey;
+    }
+    &.white {
+      background: $white;
+    }
+    .arrow {
+      border: solid #1b1d22;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 5px;
+      margin-top: -4px;
+    }
+    .down {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+    p.label {
+      margin-bottom: 0.2rem;
+    }
+  }
+}
